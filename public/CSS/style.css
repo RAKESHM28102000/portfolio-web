@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+#home a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+}
+#who a{
+    text-decoration:none;  
+    color:rgb(255, 255, 255); 
+}
+#navbar{
+    position: fixed;
+    top:0;
+    left:10px;
+}
+#navbar a{
+    text-decoration:none; 
+    color:rgb(255, 255, 255); 
+}
