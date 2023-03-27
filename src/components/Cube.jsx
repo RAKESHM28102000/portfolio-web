@@ -15,7 +15,7 @@ const Cube = (props) => {
         <RenderTexture attach="map">
           <PerspectiveCamera makeDefault position={[0, 0, 5]} />
           <color attach="background" args={props.bgcolor} />
-          <Text ref={textRef} fontSize={1.5} color="#424242">
+          <Text ref={textRef} fontSize={1} color="#fff">
            {props.name}
           </Text>
         </RenderTexture>

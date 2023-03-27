@@ -1,11 +1,13 @@
-import React, { Suspense, useState } from "react";
+import React, {useState } from "react";
 import styled from "styled-components";
 // import Development from "./Development";
 // import ProductDesign from "./ProductDesign";
 // import WebDesign from "./WebDesign";
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import Cube from "./Cube";
+// for cubes
+// import { OrbitControls } from "@react-three/drei";
+// import { Canvas } from "@react-three/fiber";
+// import Cube from "./Cube";
+import Workcard from "./Workcard";
 
 const data = [
   "Web Design",
@@ -72,7 +74,7 @@ const ListItem = styled.li`
     top: 0;
     left: 0;
     ${'' /* color: pink; */}
-    color:#ffff40;
+    color:gray;
     width: 0px;
     overflow: hidden;
     white-space: nowrap;
@@ -91,6 +93,10 @@ const ListItem = styled.li`
 
 const Right = styled.div`
   flex: 1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
 `;
 
 const Works = () => {
@@ -109,34 +115,11 @@ const Works = () => {
         </Left>
         <Right>
           {work === "Web Design" ? (
-           <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
-            <Suspense fallback={null}>
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[3, 2, 1]} />
-              <Cube name="quality" bgcolor={["#2fffff"]}/>
-              <OrbitControls enableZoom={false} autoRotate />
-            </Suspense>
-          </Canvas>
+          <Workcard title="Front-End" content="HTML,CSS,REACT JS" image="./img/logo.png"/>
           ) : work === "Development" ? (
-            <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
-            <Suspense fallback={null}>
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[3, 2, 1]} />
-              <Cube name="strong" bgcolor={["#ff7ca4"]}/>
-              <OrbitControls enableZoom={false} autoRotate />
-            </Suspense>
-          </Canvas>
-          
+            <Workcard title="Database" content="MongoDB" image="./img/logo.png"/>
           ) : (
-            <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
-            <Suspense fallback={null}>
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[3, 2, 1]} />
-              <Cube name="smart" bgcolor={["#ef44ff"]}/>
-              <OrbitControls enableZoom={false} autoRotate />
-            </Suspense>
-          </Canvas>
-            
+            <Workcard title="Back-End" content="Node JS,Express JS,NoSQL," image="./img/logo.png"/>
           )}
         </Right>
       </Container>
@@ -147,3 +130,12 @@ const Works = () => {
 
 export default Works;
   {/* <WebDesign /> <ProductDesign />   <Development />*/}
+  // this is for calling cube
+    {/* <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
+            <Suspense fallback={null}>
+              <ambientLight intensity={0.5} />
+              <directionalLight position={[3, 2, 1]} />
+              <Cube name="smart" bgcolor={["#ef44ff"]}/>
+              <OrbitControls enableZoom={false} autoRotate />
+            </Suspense>
+          </Canvas> */}

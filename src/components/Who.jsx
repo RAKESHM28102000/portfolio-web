@@ -56,7 +56,8 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  color: #da4ea2;
+  color: rgb(82, 82, 82);
+  font-size:50px;
   @media only screen and (max-width:1028px) {
     font-size:40px;
   }
@@ -75,7 +76,7 @@ const Desc = styled.p`
 // `;
 
 const Button = styled.button`
-  background-color: #da4ea2;
+  background-color: rgb(82, 82, 82);
   color: white;
   font-weight: 500;
   width: 150px;
@@ -98,7 +99,7 @@ const Who = () => {
             <Suspense fallback={null}>
               <ambientLight intensity={0.5} />
               <directionalLight position={[3, 2, 1]} />
-              <Cube name="Rakesh" bgcolor={["#8bff39"]}/>
+              <Cube name="CREATIVE" bgcolor={["rgb(82, 82, 82)"]}/>
               <OrbitControls enableZoom={false} autoRotate />
             </Suspense>
           </Canvas>
@@ -106,7 +107,7 @@ const Who = () => {
         <Right>
           <Title>Think outside the square space.</Title>
           <WhatWeDo>
-            <Line src="./img/line.png" />
+            {/* <Line src="./img/line.png" /> */}
             <Subtitle>I'm Rakesh</Subtitle>
           </WhatWeDo>
           <Desc>

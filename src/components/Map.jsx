@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   ComposableMap,
   Geographies,
@@ -12,17 +13,17 @@ const Map = () => {
     <ComposableMap
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
-        rotate: [-80,-19, 0],
+        rotate: [-80,-15, 0],
         center: [0, 0],
-        scale: 1600
+        scale:1000
       }}
       style={{width:"100%", height:"100%"}}
     >
       <Geographies
         geography="/features.json"
-        fill="#2C065D"
+        fill="rgb(82, 82, 82)"
         stroke="#FFFFFF"
-        strokeWidth={0.5}
+        strokeWidth={1}
       >
         {({ geographies }) =>
           geographies.map((geo) => (
@@ -47,8 +48,8 @@ const Map = () => {
       </Annotation> */}
       <Annotation
         subject={[79.942790,12.661225]}
-        dx={-90}
-        dy={-30}
+        dx={-50}
+        dy={-90}
         connectorProps={{
           stroke: "white",
           strokeWidth:2,
@@ -56,7 +57,7 @@ const Map = () => {
         }}
       >
         <text x="-1" textAnchor="end" alignmentBaseline="middle" fill="white">
-          {"Maiyur=>Chengalpattu=>TN=>India"}
+          {"<Maiyur_Chengalpattu_TN_India>"}
         </text>
       </Annotation>
     </ComposableMap>

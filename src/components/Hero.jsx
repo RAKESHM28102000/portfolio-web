@@ -76,7 +76,8 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  color: #da4ea2;
+
+  color:rgb(82, 82, 82);
   @media only screen and (max-width:1028px) {
     font-size:40px;
   }
@@ -101,7 +102,7 @@ const Desc = styled.p`
 // `;
 
 const Button = styled.button`
-  background-color: #da4ea2;
+  background-color: rgb(82, 82, 82);
   color: white;
   font-weight: 500;
   width: 150px;
@@ -141,6 +142,8 @@ const Img = styled.img`
   left: 0;
   right: 0;
   margin: auto;
+  ${'' /* border:solid 3px gray;
+  border-radius:100%; */}
   animation: animate 2s infinite ease alternate;
   @media only screen and (max-width:1028px) {
     width: 300px;
@@ -161,8 +164,8 @@ const Hero = () => {
         <Left>
           <Title>Think. Make. Solve.</Title>
           <WhatWeDo>
-            <Line src="./img/line.png" />
-            <Subtitle>What I Do</Subtitle>
+            {/* <Line src="./img/line.png" /> */}
+            <Subtitle>I build things for the web.</Subtitle>
           </WhatWeDo>
           <Desc>
             I enjoy creating delightful, human-centered digital experiences.
@@ -177,7 +180,7 @@ const Hero = () => {
               <directionalLight position={[3, 2, 1]} />
               <Sphere args={[1, 100, 200]} scale={2.4}>
                 <MeshDistortMaterial
-                  color="#3d1c56"
+                  color="rgb(82, 82, 82)"
                   attach="material"
                   distort={0.5}
                   speed={2}
@@ -185,7 +188,7 @@ const Hero = () => {
               </Sphere>
             </Suspense>
           </Canvas>
-          <Img src="./img/rakeshroundimage.png" />
+          <Img src="./img/job-search.png" />
         </Right>
       </Container>
     </Section>

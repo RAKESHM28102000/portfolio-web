@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Who from "./components/Who";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
+import Card from './components/Card';
 const Container = styled.div`
   height: 100vh;
   scroll-snap-type: y mandatory;
@@ -10,12 +11,24 @@ const Container = styled.div`
   overflow-y: auto;
   scrollbar-width: none;
   color:white;
-  ${'' /* background: url("./img/bg.jpeg"); */}
- ${'' /* background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_h1W-0wC3w2R69A6vBmxKZ-RQG7Tvr9NDSzVQgwofKA&usqp=CAU&ec=48665701"); */}
- background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE9676pZzdwD3W81fr1wdrXrZNYlSBlgvi0bzCJLr4jw&usqp=CAU&ec=48665701");
- background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapZTm-g8JdTmnz1pS8FeKZf-AaerwArmciAQHrGGXVzFzHQF-RYrHL0DpRII0CKB4M-Z61gyi3RI&usqp=CAU&ec=48665701");
- background-size:cover;
-background-position:center;
+
+${'' /* background -1 */}
+${'' /* background-color:rgb(117, 0, 107) ;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); */}
+
+${'' /* background-3 */}
+${'' /* background-color: #9500b3;
+background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png"); */}
+
+${'' /* background-4 */}
+background-color:#00fff2;
+background-image: url("https://www.transparenttextures.com/patterns/escheresque-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+${'' /* background-2 */}
+${'' /* background-color: #8d00a3;
+background-image: url("https://www.transparenttextures.com/patterns/robots.png"); */}
+
   &::-webkit-scrollbar{
     display: none;
   }
@@ -25,6 +38,7 @@ function App() {
             <Hero/>
             <Who/>
             <Works/>
+            <Card/>
             <Contact/>
   </Container>)}
 export default App;

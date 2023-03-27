@@ -9,11 +9,15 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
+  margin-top:50px;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   gap: 50px;
+  @media only screen and (max-width: 1028px) {
+   margin-top:5px;
+  }
 `;
 
 const Left = styled.div`
@@ -65,7 +69,7 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
-  background-color: #da4ea2;
+   background-color: rgb(82, 82, 82);
   color: white;
   border: none;
   font-weight: bold;

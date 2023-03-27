@@ -2,9 +2,22 @@ a{
     text-decoration: none;
     color:rgb(255, 255, 255);
 }
+
+/* background: url("./img/bg.jpeg"); 
+ background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_h1W-0wC3w2R69A6vBmxKZ-RQG7Tvr9NDSzVQgwofKA&usqp=CAU&ec=48665701");
+ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapZTm-g8JdTmnz1pS8FeKZf-AaerwArmciAQHrGGXVzFzHQF-RYrHL0DpRII0CKB4M-Z61gyi3RI&usqp=CAU&ec=48665701"); */
+ /* background-size:cover;
+
+background-position:center; */ 
+body{
+    /* background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%); */
+    background-color:rgb(82, 82, 82) ;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
 #home a{
     text-decoration:none;
     color:rgb(255, 255, 255);
+   
 }
 #who a{
     text-decoration:none;  
@@ -15,7 +28,152 @@ a{
     top:0;
     left:10px;
 }
+@media only screen and (max-width:1028px) {
+    #navbar{
+        position:static;
+      
+  }
+
+}
 #navbar a{
     text-decoration:none; 
     color:rgb(255, 255, 255); 
 }
+/* card section */
+.container-fluids{
+    display: flex;
+    justify-content: center;
+}
+.cardincard{
+    margin-top:60px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.card img{
+    border-radius:5%;
+    border: 2px solid black;
+}
+ .card{
+   width:400px;
+   height:500px;
+    color:rgb(91, 91, 91);
+    background-color: #e5e5e5 !important;
+    border:3px solid rgb(255, 255, 255) !important;
+    box-shadow:15px 20px 20px rgba(0, 0,0, .3),
+                inset 4px 4px 10px white;
+    border-radius:10px !important;
+    overflow: hidden;
+    margin:10px;
+    padding:5px;
+    transition: .2s;
+}
+.card h3{
+    text-align:center;
+    font-size:14px;
+}
+.card p{
+    text-align:left;
+    font-size: 10px;
+}
+.card a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.card button{
+    text-align: center;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0, 0,0, .3),
+                 inset -4px -4px 10px white;
+    transition: .2s;
+}
+#cardin .cardinwork{
+    width:100%;
+    height:100%;
+    color:rgb(91, 91, 91);
+    background-color: #ffffff !important;
+    /* border:3px solid rgb(66, 66, 66) !important; */
+    box-shadow:15px 20px 20px rgba(0, 0,0, .3),
+                inset 4px 4px 10px white;
+    border-radius:10px !important;
+    overflow: hidden;
+    text-align: center;
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cardinwork img{
+    width:40%;
+    margin:auto;
+    border-radius: 30%;
+    border: solid gray 2px;
+    
+}
+.cardinwork p{
+    margin:10px 2px;
+    font-size:15px;
+    
+}
+.cardinwork div{
+    margin:10px 2px;
+}
+@media only screen and (max-width:1028px) {
+    /* card section */
+
+.cardincard{
+    margin-top:20px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.card img{
+    border-radius:5%;
+    border: 2px solid black;
+}
+ .card{
+   width:80%;
+   height:100%;
+    color:rgb(91, 91, 91);
+    background-color: #e5e5e5 !important;
+    border:3px solid rgb(255, 255, 255) !important;
+    box-shadow:15px 20px 20px rgba(0, 0,0, .3),
+                inset 4px 4px 10px white;
+    border-radius:10px !important;
+    overflow: hidden;
+    margin:10px;
+    padding:5px;
+    transition: .2s;
+}
+.card h3{
+    text-align:center;
+    font-size:40px;
+}
+.card p{
+    text-align:left;
+    font-size:20px;
+}
+.card a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.card button{
+    text-align: center;
+    font-size:20px;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0, 0,0, .3),
+                 inset -4px -4px 10px white;
+    transition: .2s;
+}
+  
+      
+  }
