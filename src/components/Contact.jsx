@@ -35,6 +35,7 @@ const Title = styled.h1`
   font-weight: 200;
   @media only screen and (max-width: 1028px) {
    font-size:50px;
+   margin:10px 2px;
   }
 `;
 
@@ -54,7 +55,8 @@ const Input = styled.input`
   border: none;
   border-radius: 5px;
   @media only screen and (max-width: 1028px) {
-    font-size:40px
+    font-size:40px;
+    margin:10px 2px;
   }
 `;
 
@@ -65,6 +67,7 @@ const TextArea = styled.textarea`
   background-color: #e8e6e6;
   @media only screen and (max-width: 1028px) {
     font-size:40px;
+    margin:10px 2px;
   }
 `;
 
@@ -91,6 +94,17 @@ const Right = styled.div`
 const Contact = () => {
   const ref = useRef();
   const [success, setSuccess] = useState(null);
+  const [form,setForm]=useState({
+    name:"",
+    email:"",
+    message:""
+  });
+  function setform(e){
+   const{name,value} =e.target;
+   setForm(function(prev){
+    return {...prev,[name]:value}
+  });
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -106,6 +120,12 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setSuccess(true);
+          setForm({
+            name:"",
+            email:"",
+            message:""
+
+          });
         },
         (error) => {
           console.log(error.text);
@@ -119,16 +139,18 @@ const Contact = () => {
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
             <Title>Contact Us</Title>
-            <Input placeholder="Name" name="name" />
-            <Input placeholder="Email" name="email" />
+            <Input placeholder="Name" name="name" value={form.name} onChange={setform}/>
+            <Input placeholder="Email" name="email" value={form.email} onChange={setform} />
             <TextArea
               placeholder="Write your message"
               name="message"
               rows={5}
+              value={form.message}
+              onChange={setform}
             />
             <Button type="submit">Send</Button>
-            {success &&
-              "Your message has been sent. We'll get back to you soon :)"}
+           <h2>{success &&
+              "Your message has been sent. We'll get back to you soon :)"}</h2>
           </Form>
         </Left>
         <Right>

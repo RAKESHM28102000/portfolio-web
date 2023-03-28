@@ -13,6 +13,8 @@ const Section = styled.div`
   } */}
   @media only screen and (max-width:1028px) {
     height:140vh;
+    align-items:center;
+    padding-top:100px
   }
 `;
 

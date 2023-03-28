@@ -15,7 +15,7 @@ const Section = styled.div`
     height: 200vh;
   } */}
   @media only screen and (max-width:1028px) {
-    height:140vh;
+    height:120vh;
   }
 `;
 
@@ -62,6 +62,7 @@ const Title = styled.h1`
   } */}
   @media only screen and (max-width:1028px) {
     text-align: center;
+    font-size:65px;
   }
 `;
 
@@ -71,15 +72,15 @@ const WhatWeDo = styled.div`
   gap:7px;
 `;
 
-const Line = styled.img`
-  height:5px;
-`;
+// const Line = styled.img`
+//   height:5px;
+// `;
 
 const Subtitle = styled.h2`
 
   color:rgb(82, 82, 82);
   @media only screen and (max-width:1028px) {
-    font-size:40px;
+    font-size:50px;
   }
 `;
 
@@ -92,7 +93,7 @@ const Desc = styled.p`
   } */}
   @media only screen and (max-width:1028px) {
     padding: 10px;
-    font-size:25px;
+    font-size:35px;
     text-align: center;
   }
 `;
@@ -112,8 +113,9 @@ const Button = styled.button`
   cursor: pointer;
   @media only screen and (max-width:1028px) {
     padding:10px;
-    font-size:25px;
+    font-size:30px;
     text-align: center;
+    width:250px;
   }
 `;
 

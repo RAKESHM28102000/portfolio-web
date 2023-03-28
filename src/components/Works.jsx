@@ -26,6 +26,9 @@ const Section = styled.div`
   color: black;
   font-size:14px;
   font-weight: 300;
+  @media only screen and (max-width: 1028px) {
+    margin-bottom:50px;
+  }
 `;
 
 const Container = styled.div`
@@ -63,8 +66,9 @@ const ListItem = styled.li`
   -webkit-text-stroke: 1px white;
   position: relative;
   @media only screen and (max-width: 1028px) {
-    font-size:50px;
-    margin:5px;
+    font-size:60px;
+    margin:20px 2px;
+    padding:10px 2px;
     color: white;
     -webkit-text-stroke: 0px;
   }

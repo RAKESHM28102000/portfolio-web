@@ -44,9 +44,9 @@ const Logo = styled.img`
   ${'' /* border-radius:50%; */}
   padding:5px;
   @media only screen and (max-width:1028px) {
-    height:70px;
-    width:70px;
-    margin-left:10px
+    height:100px;
+    width:100px;
+    margin-right:20px;
     ${'' /* display:none; */}
   
 

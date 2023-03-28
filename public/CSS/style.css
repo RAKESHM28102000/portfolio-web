@@ -125,6 +125,9 @@ body{
 }
 @media only screen and (max-width:1028px) {
     /* card section */
+#card h1{
+    margin-top:100px;
+}
 
 .cardincard{
     margin-top:20px;
@@ -140,7 +143,7 @@ body{
     border: 2px solid black;
 }
  .card{
-   width:80%;
+   width:100%;
    height:100%;
     color:rgb(91, 91, 91);
     background-color: #e5e5e5 !important;
@@ -149,7 +152,7 @@ body{
                 inset 4px 4px 10px white;
     border-radius:10px !important;
     overflow: hidden;
-    margin:10px;
+    margin:20px 2px;
     padding:5px;
     transition: .2s;
 }
@@ -176,4 +179,46 @@ body{
 }
   
       
+  }
+/* this is card in work section */
+  @media only screen and (max-width:1028px){
+    #cardin .cardinwork{
+        width:100%;
+        height:100%;
+        color:rgb(91, 91, 91);
+        background-color: #ffffff !important;
+        /* border:3px solid rgb(66, 66, 66) !important; */
+        box-shadow:15px 20px 20px rgba(0, 0,0, .3),
+                    inset 4px 4px 10px white;
+        border-radius:10px !important;
+        overflow: hidden;
+        text-align: center;
+        transition: .2s;
+        display: flex;
+        flex-direction: column;
+        font-size:40px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .cardinwork img{
+        width:50%;
+        margin:auto;
+        border-radius: 30%;
+        border: solid gray 2px;
+        
+    }
+    .cardinwork h1{
+        margin:10px 2px;
+        font-size:50px;
+        
+    }
+    .cardinwork p{
+        margin:10px 2px;
+        font-size:30px;
+        
+    }
+    .cardinwork div{
+        margin:10px 2px;
+    }
+
   }
