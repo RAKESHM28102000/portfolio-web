@@ -190,7 +190,7 @@ const Hero = () => {
               </Sphere>
             </Suspense>
           </Canvas>
-          <Img src="./img/job-search.png" />
+          <Img src="./img/job-seeker.png" />
         </Right>
       </Container>
     </Section>

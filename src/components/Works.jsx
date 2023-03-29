@@ -119,11 +119,11 @@ const Works = () => {
         </Left>
         <Right>
           {work === "Web Design" ? (
-          <Workcard title="Front-End" content="HTML,CSS,REACT JS" image="./img/logo.png"/>
+          <Workcard title="Front-End" content="HTML,CSS,REACT JS" image="./img/developer.png"/>
           ) : work === "Development" ? (
-            <Workcard title="Database" content="MongoDB" image="./img/logo.png"/>
+            <Workcard title="Database" content="MongoDB" image="./img/database.png"/>
           ) : (
-            <Workcard title="Back-End" content="Node JS,Express JS,NoSQL," image="./img/logo.png"/>
+            <Workcard title="Back-End" content="Node JS,Express JS,NoSQL," image="./img/security.png"/>
           )}
         </Right>
       </Container>

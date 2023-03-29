@@ -27,7 +27,7 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size:65px;
+  font-size:60px;
   @media only screen and (max-width:1028px) {
     font-size:70px;
     margin:10px 2px;
@@ -49,8 +49,16 @@ const Right = styled.div`
 
 const WhatWeDo = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction:column;
+  align-items:flex-start;
   gap: 10px;
+  @media only screen and (max-width:1028px) {
+    display: flex;
+  flex-direction:column;
+  align-items:center;
+  gap: 10px;
+   
+  }
 `;
 
 // const Line = styled.img`
@@ -59,7 +67,7 @@ const WhatWeDo = styled.div`
 
 const Subtitle = styled.h2`
   color: rgb(82, 82, 82);
-  font-size:50px;
+  font-size:45px;
   @media only screen and (max-width:1028px) {
     font-size:60px;
     margin:5px 2px;
@@ -114,13 +122,15 @@ const Who = () => {
         </Left>
         <Right>
           {/* <Title>Think outside the square space.</Title> */}
-          <Title>Hello! I AM RAKESH </Title>
+          <Title>Hello!</Title>
+          <Title>I'M RAKESH</Title>
           <WhatWeDo>
             {/* <Line src="./img/line.png" /> */}
-            <Subtitle>TRUST ME,I AM </Subtitle>
+            <Subtitle>TRUST ME</Subtitle>
+            <Subtitle>I'M A</Subtitle>
           </WhatWeDo>
           <Desc>
-            a creative web developer.
+           WEB DEVELOPER
           </Desc>
           <Button><a href="https://www.linkedin.com/in/rakesh-m-b67121217/details/projects/" target="blank">See my works</a></Button>
         </Right>

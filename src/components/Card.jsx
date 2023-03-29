@@ -29,7 +29,7 @@ function Card() {
               <div className="card-header"><h3>Google keep App</h3></div>
                <div className="card-body">
                     <p>Clone of google keep app using Reactjs</p>
-                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://reactgooglekeepapp.onrender.com/" target="blank">Show Project</a></button>
+                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://reactgooglekeepapp.onrender.com/" target="blank">Visit Project</a></button>
                </div>
            </div>
          </div>
@@ -38,7 +38,7 @@ function Card() {
               <div className="card-header"><h3>Movie Search App.</h3></div>
                <div className="card-body">
                     <p>Movie search app using React Hooks and the app will be able to search for movies via the OMDB API .</p>
-                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://moviefinder-c9zg.onrender.com/" target="blank">Show Project</a></button>
+                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://moviefinder-c9zg.onrender.com/" target="blank">Visit Project</a></button>
      
                </div>
            </div>
@@ -49,7 +49,7 @@ function Card() {
                <div className="card-body">
                 {/* <img className="img-items" width="40%" height="40%" src="./img/logo.png" alt='cont-1'/> */}
                 <p>Blog website using node.js and express.js and mongodb and ejs.</p>
-                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://myblog-r2zp.onrender.com/" target="blank">Show Project</a></button>
+                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://myblog-r2zp.onrender.com/" target="blank">Visit Project</a></button>
      
                </div>
            </div>
@@ -62,7 +62,7 @@ function Card() {
                <div className="card-body">
                 {/* <img className="img-items" width="40%" height="40%" src="./img/logo.png" alt='cont-1'/> */}
                 <p>Dynamic Frontend, through EJS,which is an NPM package.Backend built with Nodejs,Database Used: MongoDB Atlas.</p>
-                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://todolist-v2-qc8a.onrender.com/" target="blank">Show Project</a></button>
+                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://todolist-v2-qc8a.onrender.com/" target="blank">Visit Project</a></button>
      
                </div>
            </div>
@@ -72,7 +72,7 @@ function Card() {
               <div className="card-header"><h3>Tanpsycon 2023 website</h3></div>
                <div className="card-body">
                 <p>Tanpsycon event website using Ejs,Nodejs,Expressjs,MongoDB.</p>
-                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://tanpsy2023.onrender.com/" target="blank">Show Project</a></button>
+                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://tanpsy2023.onrender.com/" target="blank">Visit Project</a></button>
                </div>
            </div>
          </div>
@@ -81,7 +81,7 @@ function Card() {
               <div className="card-header"><h3>E-commerce website</h3></div>
                <div className="card-body">
                <p>Website using Reactjs.</p>
-                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://reactapp2023.onrender.com/" target="blank">Show Project</a></button>
+                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://reactapp2023.onrender.com/" target="blank">Visit Project</a></button>
      
                </div>
            </div>
