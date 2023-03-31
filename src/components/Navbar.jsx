@@ -1,4 +1,6 @@
 import React from "react";
+// import "../node_modules/jquery/dist/jquery.min.js"; 
+// import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
 
 function Navbar() {
@@ -8,7 +10,7 @@ function Navbar() {
         <div className="navbarbrand navbrandclass">
              <div> <a className="navbar-brand" href="#contact">Rakesh</a></div>
         </div>
-     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">

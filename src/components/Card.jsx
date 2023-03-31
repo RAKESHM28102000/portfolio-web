@@ -72,7 +72,7 @@ function Card() {
               <div className="card-header"><h3>Tanpsycon 2023 website</h3></div>
                <div className="card-body">
                 <p>Tanpsycon event website using Ejs,Nodejs,Expressjs,MongoDB.</p>
-                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://tanpsy2023.onrender.com/" target="blank">Visit Project</a></button>
+                <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://tanpsycon2023.onrender.com" target="blank">Visit Project</a></button>
                </div>
            </div>
          </div>
