@@ -12,7 +12,7 @@ const Section = styled.div`
     height: 200vh;
   } */}
   @media only screen and (max-width:1028px) {
-    height:140vh;
+    height:200vh;
     align-items:center;
     padding-top:100px
   }
