@@ -7,6 +7,8 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg  bg-primay sticky-top" data-bs-theme="dark">
     <div className="container-fluid">
+      <div><img src="./img/RWD (1).png" alt="Logo"  className="d-inline-block align-text-top navbarBrandimage"/> </div>
+
         <div className="navbarbrand navbrandclass">
              <div> <a className="navbar-brand" href="#contact">Rakesh</a></div>
         </div>
