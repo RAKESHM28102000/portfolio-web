@@ -4,6 +4,9 @@ import Who from "./components/Who";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Card from './components/Card';
+import Icons from './components/Icons';
+
+
 const Container = styled.div`
   height: 100vh;
   scroll-snap-type: y mandatory;
@@ -37,9 +40,11 @@ function App() {
   return (<Container>
             <Hero/>
             <Who/>
+            <Icons/>
             <Works/>
             <Card/>
             <Contact/>
+           
   </Container>)}
 export default App;
 
