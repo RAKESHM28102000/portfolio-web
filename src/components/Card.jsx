@@ -21,7 +21,7 @@ const Section = styled.div`
 function Card() {
   return (<section id="card">
 <Section>
-<div><h1>PROJECTS</h1></div>
+<div><h1 style={{marginTop:"70px"}}>PROJECTS</h1></div>
  <div className="cardincard">  
      <div className='row'>
      <div className='col-lg-4 '>

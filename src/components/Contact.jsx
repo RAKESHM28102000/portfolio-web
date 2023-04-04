@@ -25,6 +25,7 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-top:50px;
   @media only screen and (max-width: 1028px) {
     justify-content: center;
     width:100%;
@@ -33,9 +34,10 @@ const Left = styled.div`
 
 const Title = styled.h1`
   font-weight: 200;
+  margin-top:30px
   @media only screen and (max-width: 1028px) {
    font-size:50px;
-   margin:10px 2px;
+   margin:30px 2px;
   }
 `;
 
@@ -138,7 +140,7 @@ const Contact = () => {
       <Container>
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
-            <Title>Contact Us</Title>
+            <Title>Contact Me</Title>
             <Input placeholder="Name" name="name" value={form.name} onChange={setform}/>
             <Input placeholder="Email" name="email" value={form.email} onChange={setform} />
             <TextArea

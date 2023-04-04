@@ -40,10 +40,10 @@ function App() {
   return (<Container>
             <Hero/>
             <Who/>
-            <Icons/>
             <Works/>
             <Card/>
             <Contact/>
+            <Icons/>
            
   </Container>)}
 export default App;

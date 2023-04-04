@@ -67,11 +67,12 @@ const WhatWeDo = styled.div`
 
 const Subtitle = styled.h2`
   color: rgb(82, 82, 82);
-  font-size:45px;
+  font-size:20px;
   @media only screen and (max-width:1028px) {
-    font-size:60px;
+    font-size:35px;
     margin:5px 2px;
-    padding:20px 2px;
+    padding:20px 5px;
+
   }
 `;
 
@@ -79,7 +80,7 @@ const Desc = styled.p`
   font-size:20px;
   color: lightgray;
   @media only screen and (max-width:1028px) {
-    font-size:40px;
+    font-size:30px;
     margin:5px 2px;
     padding:10px 2px;
   }
@@ -126,11 +127,10 @@ const Who = () => {
           <Title>I'M RAKESH</Title>
           <WhatWeDo>
             {/* <Line src="./img/line.png" /> */}
-            <Subtitle>TRUST ME</Subtitle>
-            <Subtitle>I'M A</Subtitle>
+            <Subtitle>A Web Developer passionate about creating interactive applications and experiences on the web. </Subtitle>
           </WhatWeDo>
           <Desc>
-           WEB DEVELOPER
+          "Work hard,have fun,make history."
           </Desc>
           <Button><a href="https://www.linkedin.com/in/rakesh-m-b67121217/details/projects/" target="blank">See my works</a></Button>
         </Right>
