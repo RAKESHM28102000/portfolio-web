@@ -1,37 +1,23 @@
-a{
-    text-decoration: none;
-    color:rgb(255, 255, 255);
-}
+a{ text-decoration: none;
+color:rgb(255, 255, 255);}
 
-/* background: url("./img/bg.jpeg"); 
- background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_h1W-0wC3w2R69A6vBmxKZ-RQG7Tvr9NDSzVQgwofKA&usqp=CAU&ec=48665701");
- background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapZTm-g8JdTmnz1pS8FeKZf-AaerwArmciAQHrGGXVzFzHQF-RYrHL0DpRII0CKB4M-Z61gyi3RI&usqp=CAU&ec=48665701"); */
- /* background-size:cover;
-
-background-position:center; */ 
 body{
-    /* background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%); */
     background-color:rgb(82, 82, 82) ;
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-}
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");}
 #home a{
     text-decoration:none;
-    color:rgb(255, 255, 255);
-   
+    color:rgb(255, 255, 255); 
 }
 #who a{
     text-decoration:none;  
-    color:rgb(255, 255, 255); 
+    color:rgb(255, 255, 255);  
 }
 /*navbar section*/
 .navbar{
     width:100%;
-    background-color: rgb(85, 85, 85) !important;
+    background-color: rgb(0, 0, 0) !important;
     color:#ffffff !important;
     font-size:20px !important;
-    /* border-color: rgb(89, 89, 89); */
-    /* border-width:2px;
-    border-style: groove; */
     text-align: center;
     position:fixed;
     top:0;
@@ -47,8 +33,6 @@ body{
     display:flex;
     align-items: center;
     justify-content: flex-start;
-  
-    
 }
 .navbrandclass img{
     width:30px;
@@ -58,13 +42,10 @@ body{
 }
 .navbrandclass a{
     align-items: center;
-    text-align: center;
-   
-}
+    text-align: center;}
 #navbarSupportedContent a{
    border-bottom:2px solid transparent;
    margin:5px;
-   /* background-color: rgb(240, 242, 241); */
    border-radius:7%;
 }
 #navbarSupportedContent a:hover{
@@ -74,16 +55,12 @@ body{
     border-radius:7%;
     margin:2px;
 }
-
 #navbarSupportedContent button a{
    text-decoration:none; }
 #navbar{
     position: fixed;
     top:0;
     left:10px;}
-
-
-
 #navbar a{
     text-decoration:none; 
     color:rgb(255, 255, 255); 
@@ -95,10 +72,8 @@ body{
     height: 30px;
 }
 @media(max-width:1028px){
-   
     .navbar{
         width: 100%;
-        /* height:10%; */
     }
     .navbar-brand .navbrandclass{
         display:flex;
@@ -136,7 +111,7 @@ body{
 }
 .card img{
     border-radius:5%;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 252, 252);
 }
  .card{
    width:400px;
@@ -151,6 +126,11 @@ body{
     margin:10px;
     padding:5px;
     transition: .2s;
+}
+div.flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card h3{
     text-align:center;
@@ -177,7 +157,7 @@ body{
 #cardin .cardinwork{
     width:100%;
     height:100%;
-    color:rgb(91, 91, 91);
+    color:rgb(0, 0, 0);
     background-color: #ffffff !important;
     /* border:3px solid rgb(66, 66, 66) !important; */
     box-shadow:15px 20px 20px rgba(0, 0,0, .3),
@@ -200,7 +180,7 @@ body{
 }
 .cardinwork p{
     margin:10px 2px;
-    font-size:15px;
+    font-size:18px;
     
 }
 .cardinwork div{
@@ -222,11 +202,12 @@ body{
     flex-wrap: wrap;
 }
 .card img{
+    width:50%;
     border-radius:5%;
     border: 2px solid black;
 }
  .card{
-   width:100%;
+   width:80%;
    height:100%;
     color:rgb(91, 91, 91);
     background-color: #e5e5e5 !important;
@@ -238,6 +219,11 @@ body{
     margin:20px 2px;
     padding:5px;
     transition: .2s;
+}
+div.flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card h3{
     text-align:center;

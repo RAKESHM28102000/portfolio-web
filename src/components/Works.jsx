@@ -1,22 +1,12 @@
 import React, {useState } from "react";
 import styled from "styled-components";
-// import Development from "./Development";
-// import ProductDesign from "./ProductDesign";
-// import WebDesign from "./WebDesign";
-// for cubes
-// import { OrbitControls } from "@react-three/drei";
-// import { Canvas } from "@react-three/fiber";
-// import Cube from "./Cube";
 import Workcard from "./Workcard";
 
 const data = [
   "Web Design",
   "Development",
   "Illustration"
-  // "Product Design",
-  // "Social Media",
 ];
-
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -30,7 +20,6 @@ const Section = styled.div`
     margin-bottom:50px;
   }
 `;
-
 const Container = styled.div`
   width: 1100px;
   display: flex;
@@ -62,8 +51,8 @@ const ListItem = styled.li`
   font-size:70px;
   font-weight: bold;
   cursor: pointer;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
+  color:white;
+  -webkit-text-stroke:2px black;
   position: relative;
   @media only screen and (max-width: 1028px) {
     font-size:60px;
@@ -78,14 +67,14 @@ const ListItem = styled.li`
     top: 0;
     left: 0;
     ${'' /* color: pink; */}
-    color:gray;
+    color:black;
     width: 0px;
     overflow: hidden;
     white-space: nowrap;
   }
   &:hover {
     ::after {
-      animation: moveText 0.5s linear both;
+      animation: moveText 0.8s linear both;
       @keyframes moveText {
         to {
           width: 100%;
@@ -94,7 +83,6 @@ const ListItem = styled.li`
     }
   }
 `;
-
 const Right = styled.div`
   flex: 1;
   display:flex;
@@ -102,7 +90,6 @@ const Right = styled.div`
   align-items:center;
   
 `;
-
 const Works = () => {
   const [work, setWork] = useState("Web Design");
   return (<section id="works">
@@ -119,11 +106,11 @@ const Works = () => {
         </Left>
         <Right>
           {work === "Web Design" ? (
-          <Workcard title="Front-End" content="HTML,CSS,ReactJS" image="./img/developer.png"/>
+          <Workcard title="Front-End skills" content="HTML,CSS,JavaScript,Reactjs" image="./img/developer.png"/>
           ) : work === "Development" ? (
-            <Workcard title="Database" content="MongoDB" image="./img/database.png"/>
+            <Workcard title="Database" content="Mongodb" image="./img/database.png"/>
           ) : (
-            <Workcard title="Back-End" content="NodeJS,ExpressJS,NoSQL" image="./img/security.png"/>
+            <Workcard title="Back-End skills" content="NodeJS,ExpressJS" image="./img/security.png"/>
           )}
         </Right>
       </Container>
@@ -133,13 +120,3 @@ const Works = () => {
 };
 
 export default Works;
-  {/* <WebDesign /> <ProductDesign />   <Development />*/}
-  // this is for calling cube
-    {/* <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
-            <Suspense fallback={null}>
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[3, 2, 1]} />
-              <Cube name="smart" bgcolor={["#ef44ff"]}/>
-              <OrbitControls enableZoom={false} autoRotate />
-            </Suspense>
-          </Canvas> */}

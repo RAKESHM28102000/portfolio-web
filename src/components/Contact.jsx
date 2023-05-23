@@ -74,7 +74,7 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
-   background-color: rgb(82, 82, 82);
+   background-color:black;
   color: white;
   border: none;
   font-weight: bold;
@@ -151,8 +151,8 @@ const Contact = () => {
               onChange={setform}
             />
             <Button type="submit">Send</Button>
-           <h2>{success &&
-              "Your message has been sent. We'll get back to you soon :)"}</h2>
+           <h3>{success &&
+              "Your message has been sent.I'll get back to you soon :)"}</h3>
           </Form>
         </Left>
         <Right>

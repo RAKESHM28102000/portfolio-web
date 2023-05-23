@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = styled.div`
-  scroll-snap-align: center;
+  scroll-snap-align:start;
   display: flex;
   flex-direction:column;
   align-items:center;
@@ -22,7 +22,7 @@ function Card() {
 <div><h1 style={{marginTop:"70px"}}>PROJECTS</h1></div>
  <div className="cardincard">  
      <div className='row'>
-     <div className='col-lg-4 '>
+     <div className='col-lg-4 flexcenter'>
              <div className="card">
               <div className="card-header"><h3>Youtube clone</h3></div>
                <div className="card-body">
@@ -32,7 +32,7 @@ function Card() {
                </div>
            </div>
          </div>
-         <div className='col-lg-4 '>
+         <div className='col-lg-4 flexcenter'>
              <div className="card">
               <div className="card-header"><h3>Movie Search App.</h3></div>
                <div className="card-body">
@@ -43,7 +43,7 @@ function Card() {
                </div>
            </div>
          </div>
-       <div className='col-lg-4 '>
+       <div className='col-lg-4 flexcenter'>
              <div className="card">
               <div className="card-header"><h3>Blog Website.</h3></div>
                <div className="card-body">
@@ -56,7 +56,7 @@ function Card() {
          </div>
         </div>
          <div className='row'>
-         <div className='col-lg-4 '>
+         <div className='col-lg-4 flexcenter'>
              <div className="card">
               <div className="card-header"><h3>To-do list App.</h3></div>
                <div className="card-body">
@@ -67,7 +67,7 @@ function Card() {
                </div>
            </div>
          </div>
-         <div className='col-lg-4 '>
+         <div className='col-lg-4 flexcenter '>
              <div className="card">
               <div className="card-header"><h3>Tanpsycon 2023 website</h3></div>
                <div className="card-body">
@@ -77,7 +77,7 @@ function Card() {
                </div>
            </div>
          </div>
-         <div className='col-lg-4 '>
+         <div className='col-lg-4 flexcenter'>
              <div className="card">
               <div className="card-header"><h3>Social Media website</h3></div>
                <div className="card-body">
@@ -90,7 +90,7 @@ function Card() {
          </div>
          </div>
          <div className='row'>
-            <div className='col-lg-4 '>
+            <div className='col-lg-4 flexcenter '>
              <div className="card">
               <div className="card-header"><h3>Google keep App</h3></div>
                <div className="card-body">
@@ -100,7 +100,7 @@ function Card() {
                </div>
            </div>
          </div>
-             <div className='col-lg-4 '>
+             <div className='col-lg-4 flexcenter'>
              <div className="card">
               <div className="card-header"><h3>portfolio</h3></div>
                <div className="card-body">
@@ -110,11 +110,11 @@ function Card() {
                </div>
            </div>
          </div>
-         <div className='col-lg-4 '>
+         <div className='col-lg-4 flexcenter '>
              <div className="card">
               <div className="card-header"><h3>others</h3></div>
                <div className="card-body">
-                      <img src="./img1/portfolio.png" alt='portfolio'sx={{sm:{width:"80%"}}} width="100%" height="150px"/>
+                      <img src="./img1/socialmedia.png" alt='portfolio'sx={{sm:{width:"80%"}}} width="100%" height="150px"/>
                     <p>portfolio app using Reactjs and threejs</p>
                 <button className="btn btn-lg btn-block btn-dark button-in-cart" type="button"><a href="https://reactgooglekeepapp.onrender.com/" target="blank">Visit Project</a></button>
                </div>

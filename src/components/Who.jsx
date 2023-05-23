@@ -66,7 +66,7 @@ const WhatWeDo = styled.div`
 // `;
 
 const Subtitle = styled.h2`
-  color: rgb(82, 82, 82);
+  color: black;
   font-size:20px;
   @media only screen and (max-width:1028px) {
     font-size:35px;
@@ -78,20 +78,15 @@ const Subtitle = styled.h2`
 
 const Desc = styled.p`
   font-size:20px;
-  color: lightgray;
+  color:white;
   @media only screen and (max-width:1028px) {
     font-size:30px;
     margin:5px 2px;
     padding:10px 2px;
   }
 `;
-// const anchor = styled.a`
-//   cursor: pointer;
-//   text-decoration: none;
-// `;
-
 const Button = styled.button`
-  background-color: rgb(82, 82, 82);
+  background-color: black;
   color: white;
   font-weight: 500;
   width: 150px;
@@ -106,7 +101,6 @@ const Button = styled.button`
     margin:5px;
   }
 `;
-
 const Who = () => {
   return (<section id="who">
     <Section>
@@ -116,7 +110,7 @@ const Who = () => {
             <Suspense fallback={null}>
               <ambientLight intensity={0.5} />
               <directionalLight position={[3, 2, 1]} />
-              <Cube name="CREATIVE" bgcolor={["rgb(82, 82, 82)"]}/>
+              <Cube name="RWD" bgcolor={["black"]}/>
               <OrbitControls enableZoom={false} autoRotate />
             </Suspense>
           </Canvas>
