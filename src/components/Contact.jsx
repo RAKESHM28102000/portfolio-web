@@ -35,6 +35,7 @@ const Left = styled.div`
 const Title = styled.h1`
   font-weight: 200;
   margin-top:30px
+  font-size:60px;
   @media only screen and (max-width: 1028px) {
    font-size:50px;
    margin:30px 2px;
@@ -140,7 +141,7 @@ const Contact = () => {
       <Container>
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
-            <Title>Contact Me</Title>
+            <Title >Contact Me</Title>
             <Input placeholder="Name" name="name" value={form.name} onChange={setform}/>
             <Input placeholder="Email" name="email" value={form.email} onChange={setform} />
             <TextArea

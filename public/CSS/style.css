@@ -84,9 +84,13 @@ body{
      height:70px;
 
     }
+   
     .navbrandclass a{
      margin:10px;
      font-size:60px !important;   
+    }
+    a.nav-link{
+        font-size: 40px !important;
     }
     .navbarBrandimage{
         border-radius: 50%;
@@ -118,14 +122,24 @@ body{
    height:500px;
     color:rgb(91, 91, 91);
     background-color: #e5e5e5 !important;
-    border:3px solid rgb(255, 255, 255) !important;
-    box-shadow:15px 20px 20px rgba(0, 0,0, .3),
-                inset 4px 4px 10px white;
+    background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+border:3px solid rgb(0, 0, 0) !important;
+    box-shadow:10px 15px 15px rgb(40, 40, 40),
+                inset 4px 4px 10px rgb(0, 0, 0);
     border-radius:10px !important;
     overflow: hidden;
     margin:10px;
     padding:5px;
     transition: .2s;
+}
+.flexcentercolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 div.flexcenter{
     display: flex;
@@ -209,11 +223,10 @@ div.flexcenter{
  .card{
    width:80%;
    height:100%;
-    color:rgb(91, 91, 91);
-    background-color: #e5e5e5 !important;
-    border:3px solid rgb(255, 255, 255) !important;
-    box-shadow:15px 20px 20px rgba(0, 0,0, .3),
-                inset 4px 4px 10px white;
+    color:rgb(0, 0, 0);
+    border:3px solid rgb(0, 0, 0) !important;
+    box-shadow:10px 15px 15px rgb(40, 40, 40),
+                inset 4px 4px 10px rgb(0, 0, 0);
     border-radius:10px !important;
     overflow: hidden;
     margin:20px 2px;

@@ -31,6 +31,9 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%); */}
 background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 background-image: linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%);
 background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+background-color: #00DBDE;
+background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
 
 
   &::-webkit-scrollbar{

@@ -25,7 +25,7 @@ function Footer() {
   <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
 </svg>
       </a>
-      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Rakesh, B.E</span>
+      <span style={{fontSize:"30px"}}  class="mb-3 mb-md-0 text-body-secondary">© 2023 Rakesh, B.E</span>
       {/* <span class="mb-3 mb-md-0 text-body-secondary">ph no:6383627745</span>
       <span class="mb-3 mb-md-0 text-body-secondary">mailId:mrakeshmrakesh885@gmail.com</span> */}
     </div>
